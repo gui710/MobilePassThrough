@@ -18,16 +18,16 @@ source "$UTILS_DIR/gpu-check"
 
 sudo $UTILS_DIR/ovmf-vbios-patch-setup
 
-if [ $HAS_INTEL_GPU = true ]; then
+if [ "$HAS_INTEL_GPU" = true ]; then
     sudo $DISTRO_UTILS_DIR/intel-setup
 fi
-if [ $HAS_AMD_GPU = true ]; then
+if [ "$HAS_AMD_GPU" = true ]; then
     sudo $DISTRO_UTILS_DIR/amd-setup
 fi
-if [ $HAS_NVIDIA_GPU = true ]; then
+if [ "$HAS_NVIDIA_GPU" = true ]; then
     sudo $DISTRO_UTILS_DIR/nvidia-setup
 fi
-if [ $SUPPORTS_OPTIMUS = true ]; then
+if [ "$SUPPORTS_OPTIMUS" = true ]; then
     sudo $DISTRO_UTILS_DIR/bumblebee-setup
 fi
 
