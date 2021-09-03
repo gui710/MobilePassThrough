@@ -6,8 +6,6 @@ UTILS_DIR="${PROJECT_DIR}/utils"
 DISTRO=$("${UTILS_DIR}/distro-info")
 DISTRO_UTILS_DIR="${UTILS_DIR}/${DISTRO}"
 VM_FILES_DIR="${PROJECT_DIR}/vm-files"
-="${PROJECT_DIR}/vm-files"
-_DIR="${PROJECT_DIR}/vm-files"
 
 mkdir -p "${PROJECT_DIR}/thirdparty"
 cd "${PROJECT_DIR}/thirdparty"
