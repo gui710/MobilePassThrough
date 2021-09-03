@@ -19,7 +19,7 @@ echo "Install third party repositories"
 sudo add-apt-repository ppa:graphics-drivers/ppa -y
 
 echo "Auto-install NVIDIA Drivers with ubuntu-drivers"
-sudo ubuntu-drivers install -y
+sudo ubuntu-drivers install
 
 echo "Add Bumblebee repository"
 sudo add-apt-repository ppa:bumblebee/testing -y
