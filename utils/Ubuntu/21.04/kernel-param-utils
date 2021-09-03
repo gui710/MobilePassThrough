@@ -20,7 +20,7 @@ function removeKernelParam() {
     fi
 }
 function applyKernelParamChanges() {
-    sudo sh -c 'grub2-mkconfig > /etc/grub2-efi.cfg'
+    sudo sh -c 'grub-mkconfig > /etc/grub2-efi.cfg'
 }
 
 function setGrubTimeout() {
